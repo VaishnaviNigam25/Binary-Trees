@@ -24,7 +24,7 @@ public:
             return (p==q);//when only one is NULL return false,if both NULL return true
         
         //if the root,left & right all are identical for each node in both treeS, RETURN TRUE
-        return ( p->val!=q->val) and isSameTree(p->left,q->left) and isSameTree(p->right,q->right)
+        return ( p->val==q->val) and isSameTree(p->left,q->left) and isSameTree(p->right,q->right);
           
     }
 };
